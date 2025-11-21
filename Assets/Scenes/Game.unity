@@ -1547,6 +1547,7 @@ GameObject:
   - component: {fileID: 719267425}
   - component: {fileID: 719267426}
   - component: {fileID: 719267427}
+  - component: {fileID: 719267428}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1874,7 +1875,7 @@ MonoBehaviour:
   maxHealth: 10
   minHealth: 0
   invincible: 0
-  safeTime: 1
+  safeTime: 0
   OnDamaged:
     m_PersistentCalls:
       m_Calls: []
@@ -1886,7 +1887,31 @@ MonoBehaviour:
       m_Calls: []
   OnDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 719267428}
+        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Game
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &719267428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719267417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd03b6baec4eedb4682ea847325da8f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1093274225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,7 +3547,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
+          m_IntArgument: -10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3535,7 +3560,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: -1
-          m_FloatArgument: 1
+          m_FloatArgument: 10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
