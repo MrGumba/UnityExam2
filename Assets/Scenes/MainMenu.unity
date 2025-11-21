@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 494635259}
   - component: {fileID: 494635260}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: VlolumeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,7 +1157,7 @@ GameObject:
   - component: {fileID: 1873353193}
   - component: {fileID: 1873353192}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BackstoryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
