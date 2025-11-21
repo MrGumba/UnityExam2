@@ -930,7 +930,7 @@ MonoBehaviour:
   maxSpeed: 10
   jumpForce: 10
   spriteRenderer: {fileID: 719267423}
-  animator: {fileID: 0}
+  animator: {fileID: 719267425}
 --- !u!70 &719267420
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -66,6 +66,7 @@ public class PlatformerMovement : MonoBehaviour
             }
             else
             {
+                animator.SetBool("jumping", true);
                 // Has jumped. Play jump sound and/or trigger jump animation etc
             }
         }
@@ -73,6 +74,7 @@ public class PlatformerMovement : MonoBehaviour
         else if (wasGrounded == false && isGrounded == true)
         {
             jumpReleased = false;
+            animator.SetBool("jumping", false);
             // Has landed, play landing sound and trigger landing animation
         }
         wasGrounded = isGrounded;
